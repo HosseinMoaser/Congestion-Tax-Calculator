@@ -1,7 +1,15 @@
 # Congestion Tax Calculator
+This repository contains a .NET 7 and C# implementation of a Congestion Tax Calculator (a simple and sample congestion tax calculator). The application calculates congestion tax fees for vehicles within the Gothenburg area.
 
-Welcome to the Persici Financial Technologies assessment.
+# Installation
+To install and run the application, follow these steps:
 
-This repository contains a developer [assignment](ASSIGNMENT.md) used as a basis for candidate intervew and evaluation.
+Clone this repository to your local machine.
+Open the solution in Visual Studio 2022.
+Build the solution.
+Run the application.
 
-Clone this repository to get started. Due to a number of reasons, not least privacy, you will be asked to zip your solution and share it in, instead of submitting a pull-request.
+# Usage
+The application provides a simple user interface that allows you to enter the date and time of your trip within the Gothenburg area. The application will then calculate the congestion tax fee based on the date and time of your trip.
+
+# Acknowledgments
