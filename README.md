@@ -12,4 +12,5 @@ Run the application.
 # Usage
 The application provides a simple user interface that allows you to enter the date and time of your trip within the Gothenburg area. The application will then calculate the congestion tax fee based on the date and time of your trip.
 
-# Acknowledgments
+# Development
+If you want to expand this solution to other cities, its enough to add rules for other cities. also it is possible that remove CityName from Rule entity and create Cities table and create a relation between Cities table and Rules table.
