@@ -8,10 +8,20 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CongestionTaxCalculator.Domain\CongestionTaxCalculator.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Cities\Handlers\Commands\" />
+    <Folder Include="Features\Cities\Handlers\" />
+    <Folder Include="Features\Cities\Handlers\Queries\" />
+    <Folder Include="Features\Cities\Requests\" />
+    <Folder Include="Features\Rules\Handlers\Commands\" />
+    <Folder Include="Features\Rules\Requests\Commands\" />
   </ItemGroup>
 
 </Project>
