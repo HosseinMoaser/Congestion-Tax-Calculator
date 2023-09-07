@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Application", "CongestionTaxCalculator.Application\CongestionTaxCalculator.Application.csproj", "{D9A4977C-6E8A-4C06-9ED5-0C338DDEE858}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Infrastructure", "CongestionTaxCalculator.Infrastructure\CongestionTaxCalculator.Infrastructure.csproj", "{EBA34190-A17C-4565-80EC-1CA49F016BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CongestionTaxCalculator.Persistence", "CongestionTaxCalculator.Persistence\CongestionTaxCalculator.Persistence.csproj", "{403B52D2-386A-4409-9118-5CD7B92743E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,14 @@ Global
 		{D9A4977C-6E8A-4C06-9ED5-0C338DDEE858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9A4977C-6E8A-4C06-9ED5-0C338DDEE858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A4977C-6E8A-4C06-9ED5-0C338DDEE858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA34190-A17C-4565-80EC-1CA49F016BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA34190-A17C-4565-80EC-1CA49F016BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA34190-A17C-4565-80EC-1CA49F016BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA34190-A17C-4565-80EC-1CA49F016BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403B52D2-386A-4409-9118-5CD7B92743E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403B52D2-386A-4409-9118-5CD7B92743E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403B52D2-386A-4409-9118-5CD7B92743E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403B52D2-386A-4409-9118-5CD7B92743E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +66,8 @@ Global
 		{A9EDB043-7D04-4FCC-9B14-BE205589A74A} = {020A28D4-1A3C-43C8-B1ED-5F635C347E3C}
 		{302E87A4-B115-4C1C-B669-FB2D10E6FA6B} = {25994EF6-C8A6-44A0-ACCF-15DABB7CA136}
 		{D9A4977C-6E8A-4C06-9ED5-0C338DDEE858} = {25994EF6-C8A6-44A0-ACCF-15DABB7CA136}
+		{EBA34190-A17C-4565-80EC-1CA49F016BCF} = {9F621870-61B6-46B7-AC81-840064E75751}
+		{403B52D2-386A-4409-9118-5CD7B92743E5} = {9F621870-61B6-46B7-AC81-840064E75751}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BAF3CB5-6908-430A-B10D-F610E038C111}

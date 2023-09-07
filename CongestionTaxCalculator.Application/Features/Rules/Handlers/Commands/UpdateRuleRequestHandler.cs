@@ -33,7 +33,7 @@ public class UpdateRuleRequestHandler : IRequestHandler<UpdateRuleCommand, Unit>
 
         var rule = await _ruleRepository.GetById(request.UpdateRuleDto.Id);
        _mapper.Map(request.UpdateRuleDto, rule);
-        rule = await _ruleRepository.Update(rule);
+        await _ruleRepository.Update(rule);
         return Unit.Value;
     }
 }

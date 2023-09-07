@@ -21,9 +21,9 @@ public class CreateRuleDtoValidator : AbstractValidator<CreateRuleDto>
 			.LessThan(0)
 			.WithMessage("{PropertyName} could not be less than 0 ...!");
 
-		RuleFor(p => p.VehicleType).NotEmpty()
-			.WithMessage("{PropertyName} could not be empty...!")
-			.NotNull();
+		//RuleFor(p => p.VehicleType).NotEmpty()
+		//	.WithMessage("{PropertyName} could not be empty...!")
+		//	.NotNull();
 
 		RuleFor(p => p.CityName).NotEmpty()
 			.WithMessage("{PropertyName} could not be empty...!")

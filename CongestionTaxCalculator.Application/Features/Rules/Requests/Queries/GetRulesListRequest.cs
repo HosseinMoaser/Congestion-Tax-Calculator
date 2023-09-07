@@ -5,5 +5,4 @@ namespace CongestionTaxCalculator.Application.Features.Rules.Requests.Queries;
 
 public class GetRulesListRequest : IRequest<List<RuleDto>>
 {
-    public string CityName { get; set; }
 }

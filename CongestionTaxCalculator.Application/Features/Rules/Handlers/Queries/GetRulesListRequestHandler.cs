@@ -19,7 +19,7 @@ public class GetRulesListRequestHandler : IRequestHandler<GetRulesListRequest, L
 
     public async Task<List<RuleDto>> Handle(GetRulesListRequest request, CancellationToken cancellationToken)
     {
-        var rulesList = await _ruleRepository.GetRulesByCityName(request.CityName);
+        var rulesList = await _ruleRepository.GetAll();
         return _mapper.Map<List<RuleDto>>(rulesList);
     }
 }
