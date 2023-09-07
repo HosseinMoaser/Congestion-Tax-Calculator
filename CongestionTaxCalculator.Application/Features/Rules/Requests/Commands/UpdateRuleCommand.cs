@@ -5,5 +5,5 @@ namespace CongestionTaxCalculator.Application.Features.Rules.Requests.Commands;
 
 public class UpdateRuleCommand : IRequest<Unit>
 {
-    public RuleDto RuleDto { get; set; }
+    public UpdateRuleDto UpdateRuleDto { get; set; }
 }

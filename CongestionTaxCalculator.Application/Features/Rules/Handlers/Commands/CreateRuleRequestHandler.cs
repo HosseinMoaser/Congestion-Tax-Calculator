@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CongestionTaxCalculator.Application.DTOs.Rule.Validators;
 using CongestionTaxCalculator.Application.Features.Rules.Requests.Commands;
 using CongestionTaxCalculator.Application.Persistence.Contracts;
 using CongestionTaxCalculator.Domain.Entities;
@@ -19,8 +20,17 @@ public class CreateRuleRequestHandler : IRequestHandler<CreateRuleCommand, int>
 
     public async Task<int> Handle(CreateRuleCommand request, CancellationToken cancellationToken)
     {
-        var rule = _mapper.Map<Rule>(request.RuleDto);
-        rule =await _ruleRepository.Add(rule);
+        #region Validations
+        var validator = new CreateRuleDtoValidator();
+        var validationResult = await validator.ValidateAsync(request.CreateRuleDto);
+        if (!validationResult.IsValid)
+        {
+            throw new Exception();
+        }
+        #endregion
+
+        var rule = _mapper.Map<Rule>(request.CreateRuleDto);
+        rule = await _ruleRepository.Add(rule);
         return rule.Id;
     }
 }

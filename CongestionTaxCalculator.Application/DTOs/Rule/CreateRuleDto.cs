@@ -1,9 +1,6 @@
-﻿using CongestionTaxCalculator.Application.DTOs.City;
-using CongestionTaxCalculator.Application.DTOs.Common;
+﻿namespace CongestionTaxCalculator.Application.DTOs.Rule;
 
-namespace CongestionTaxCalculator.Application.DTOs.Rule;
-
-public class RuleDto : BaseDto
+public class CreateRuleDto
 {
     public DateTime StartDateTime { get; set; }
     public DateTime EndDateTime { get; set; }

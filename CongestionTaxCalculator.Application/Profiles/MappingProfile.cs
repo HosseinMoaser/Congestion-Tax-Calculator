@@ -11,5 +11,7 @@ public class MappingProfile : Profile
 	{
 		CreateMap<City,CityDto>().ReverseMap();
 		CreateMap<Rule,RuleDto>().ReverseMap();
+		CreateMap<Rule,CreateRuleDto>().ReverseMap();
+		CreateMap<Rule,UpdateRuleDto>().ReverseMap();
 	}
 }
