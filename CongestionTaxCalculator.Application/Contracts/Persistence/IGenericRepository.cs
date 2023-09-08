@@ -1,4 +1,4 @@
-﻿namespace CongestionTaxCalculator.Application.Persistence.Contracts;
+﻿namespace CongestionTaxCalculator.Application.Contracts.Persistence;
 
 public interface IGenericRepository <T> where T : class
 {

@@ -2,7 +2,7 @@
 using CongestionTaxCalculator.Application.DTOs.Rule.Validators;
 using CongestionTaxCalculator.Application.Exceptions;
 using CongestionTaxCalculator.Application.Features.Rules.Requests.Commands;
-using CongestionTaxCalculator.Application.Persistence.Contracts;
+using CongestionTaxCalculator.Application.Contracts.Persistence;
 using CongestionTaxCalculator.Domain.Entities;
 using MediatR;
 

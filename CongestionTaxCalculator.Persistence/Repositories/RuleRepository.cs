@@ -1,4 +1,4 @@
-﻿using CongestionTaxCalculator.Application.Persistence.Contracts;
+﻿using CongestionTaxCalculator.Application.Contracts.Persistence;
 using CongestionTaxCalculator.Domain.Entities;
 
 namespace CongestionTaxCalculator.Persistence.Repositories;

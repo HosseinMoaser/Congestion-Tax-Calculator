@@ -6,15 +6,15 @@ public class CreateRuleDtoValidator : AbstractValidator<CreateRuleDto>
 {
 	public CreateRuleDtoValidator()
 	{
-		RuleFor(p=> p.StartDateTime).NotEmpty()
+		RuleFor(p=> p.StartTime).NotEmpty()
 			.WithMessage("{PropertyName} could not be empty...!")
 			.NotNull()
-			.LessThan(p=> p.EndDateTime);
+			.LessThan(p=> p.EndTime);
 
-		RuleFor(p => p.EndDateTime).NotEmpty()
+		RuleFor(p => p.EndTime).NotEmpty()
 			.WithMessage("{PropertyName} could not be empty...!")
 			.NotNull()
-			.GreaterThan(p=> p.StartDateTime);
+			.GreaterThan(p=> p.StartTime);
 
 		RuleFor(p => p.TaxValue).NotEmpty()
 			.WithMessage("{PropertyName} could not be empty...!")

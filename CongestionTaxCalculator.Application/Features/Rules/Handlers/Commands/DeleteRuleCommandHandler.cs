@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using CongestionTaxCalculator.Application.Exceptions;
 using CongestionTaxCalculator.Application.Features.Rules.Requests.Commands;
-using CongestionTaxCalculator.Application.Persistence.Contracts;
+using CongestionTaxCalculator.Application.Contracts.Persistence;
 using MediatR;
 
 namespace CongestionTaxCalculator.Application.Features.Rules.Handlers.Commands;
