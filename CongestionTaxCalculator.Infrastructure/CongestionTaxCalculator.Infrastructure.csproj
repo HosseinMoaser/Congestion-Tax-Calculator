@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CongestionTaxCalculator.Application\CongestionTaxCalculator.Application.csproj" />
     <ProjectReference Include="..\CongestionTaxCalculator.Domain\CongestionTaxCalculator.Domain.csproj" />
+    <ProjectReference Include="..\CongestionTaxCalculator.Shared\CongestionTaxCalculator.Shared.csproj" />
   </ItemGroup>
 
 </Project>

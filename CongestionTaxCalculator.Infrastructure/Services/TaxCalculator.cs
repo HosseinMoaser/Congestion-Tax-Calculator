@@ -15,9 +15,9 @@ public class TaxCalculator
             .Where(r=> ruleType.IsAssignableFrom(r) && !r.IsInterface)
             .Select(r=> Activator.CreateInstance(r) as ITaxRule);
 
-        //TODO: Find Proper Rule
-        var carCurrentTime = TimeOnly.FromTimeSpan(car.CurrentRegisteredTime.TimeOfDay);
-        var rule = dailyRules.FirstOrDefault(r=> carCurrentTime >= r.StartTime && carCurrentTime <= r.EndTime);
+        // Find Proper Rule
+        var carCurrentTime = car.CurrentRegisteredTime.TimeOfDay;
+        var rule = dailyRules.FirstOrDefault(r=> carCurrentTime >= r.StartTime.TimeOfDay && carCurrentTime <= r.EndTime.TimeOfDay);
 
         var taxRuleEngine = new TaxRuleEngine(taxRules, rule);
 
