@@ -7,6 +7,8 @@ public class OrdinaryTaxRule : ITaxRule
 {
     public Car CalculateTax(Car car, Rule rule)
     {
+        if (rule != null)
+        {
             if ((car.CurrentRegisteredTime - car.LastTaxDateTime).TotalHours < 1)
             {
                 if (car.LastTax < rule.TaxValue)
@@ -24,5 +26,10 @@ public class OrdinaryTaxRule : ITaxRule
                 car.LastTaxDateTime = car.CurrentRegisteredTime;
                 return car;
             }
+        }
+        else
+        {
+            return car;
+        }
     }
 }
