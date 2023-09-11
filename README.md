@@ -1,6 +1,8 @@
 # Congestion Tax Calculator
-This repository contains a .NET 7 and C# implementation of a Congestion Tax Calculator (a simple and sample congestion tax calculator). The application calculates congestion tax fees for vehicles within the Gothenburg area.
-This solution uses clean architecture and CQRS for implementaion also XUnit for tests.
+This repository contains a .NET 7 and C# implementation of a Congestion Tax Calculator (a simple and sample congestion tax calculator). The application calculates congestion tax fees for vehicles within the Gothenburg area. This solution uses clean architecture and CQRS for implementaion also XUnit for tests. some of packages or libraries that are used in this solution are:
+- AutoMapper
+* MediatR
++ FluentValidation
 
 # Installation
 To install and run the application, follow these steps:
