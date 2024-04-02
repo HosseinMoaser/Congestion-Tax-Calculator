@@ -18,3 +18,4 @@ The application provides a simple user interface that allows you to enter the da
 # Development
 If you want to expand this solution to other cities, its enough to add rules for other cities. also it is possible that remove CityName from Rule entity and create Cities table and create a relation between Cities table and Rules table.
 If you create new table for city, you will need to implement CityRepository. The important point in this solution is that, it is maintainable and expandable. With this solution also you can set differrent rules for differrent vehicles in differrent cities.
+Commit test
